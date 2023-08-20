@@ -1,0 +1,33 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <Version>1.0.0</Version>
+    <Authors>Ladislav Prix</Authors>
+    <Company>Shamyr</Company>
+    <NeutralLanguage>en</NeutralLanguage>
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
+    <NoWarn>$(NoWarn);1591</NoWarn>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="MediatR.Extensions.Microsoft.DependencyInjection" Version="9.0.0" />
+    <PackageReference Include="Microsoft.ApplicationInsights.AspNetCore" Version="2.16.0" />
+    <PackageReference Include="Microsoft.Extensions.PlatformAbstractions" Version="1.1.0" />
+    <PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" Version="1.10.11" />
+    <PackageReference Include="Shamyr.AspNetCore.ApplicationInsights" Version="1.1.0" />
+    <PackageReference Include="Shamyr.Cloud.Authority.Client" Version="1.2.12" />
+    <PackageReference Include="Shamyr.Cloud.Bson" Version="1.2.12" />
+    <PackageReference Include="Shamyr.Cloud.Swashbuckle" Version="1.2.12" />
+    <PackageReference Include="Shamyr.Cloud.Swashbuckle.Bson" Version="1.2.12" />
+    <PackageReference Include="Shamyr.Extensions.MongoDB" Version="1.1.0" />
+    <PackageReference Include="Shamyr.Text.Json" Version="1.1.0" />
+    <PackageReference Include="StackExchange.Redis" Version="2.2.4" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Shamyr.Urlik.Database\Shamyr.Urlik.Database.csproj" />
+  </ItemGroup>
+
+</Project>
